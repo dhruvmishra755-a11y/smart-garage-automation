@@ -1,0 +1,14 @@
+# Arduino IDE local/build files
+*.hex
+*.elf
+*.eep
+*.map
+*.d
+build/
+.pio/
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

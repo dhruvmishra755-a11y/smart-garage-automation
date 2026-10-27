@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="670" viewBox="0 0 1100 670" role="img" aria-labelledby="title desc">
+<title id="title">Smart Garage Arduino wiring diagram</title>
+<desc id="desc">HC-SR04 ultrasonic sensor connects to Arduino Uno at D7, D8, 5V and GND. SG90 servo signal connects to D9 with power and ground.</desc>
+<defs>
+  <linearGradient id="canvas" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#07111f"/><stop offset="1" stop-color="#14263c"/></linearGradient>
+  <linearGradient id="board" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0e9f8a"/><stop offset="1" stop-color="#116c63"/></linearGradient>
+  <style>
+    .label{font-family:Arial,Helvetica,sans-serif;fill:#f8fafc}
+    .muted{fill:#cbd5e1;font-family:Arial,Helvetica,sans-serif}
+    .tiny{font-size:14px}
+    .pin{font-size:16px;font-weight:700}
+    .title{font-size:27px;font-weight:800}
+    .component{font-size:19px;font-weight:700}
+  </style>
+</defs>
+<rect width="1100" height="670" rx="20" fill="url(#canvas)"/>
+<text x="42" y="48" class="label title">SMART GARAGE — WIRING OVERVIEW</text>
+<text x="42" y="76" class="muted tiny">Connect power and signal pins exactly as shown.</text>
+<!-- Arduino board -->
+<rect x="390" y="155" width="330" height="345" rx="20" fill="url(#board)" stroke="#6ee7d8" stroke-width="3"/>
+<rect x="423" y="183" width="115" height="80" rx="8" fill="#0a4b48" stroke="#6ee7d8" stroke-width="2"/>
+<text x="480" y="216" text-anchor="middle" class="label component">ARDUINO</text>
+<text x="480" y="240" text-anchor="middle" class="label component">UNO</text>
+<rect x="568" y="183" width="115" height="55" rx="5" fill="#e5e7eb" stroke="#334155" stroke-width="2"/>
+<text x="625" y="216" text-anchor="middle" style="font-family:Arial;fill:#334155;font-size:15px;font-weight:bold">USB</text>
+<text x="555" y="283" text-anchor="middle" class="label tiny">Microcontroller board</text>
+<!-- Pins -->
+<g class="label pin" text-anchor="middle">
+ <text x="420" y="335">D7</text><text x="420" y="378">D8</text><text x="420" y="421">D9</text>
+ <text x="420" y="462">5V</text><text x="420" y="490">GND</text>
+</g>
+<g fill="#f8fafc">
+ <circle cx="440" cy="330" r="5"/><circle cx="440" cy="373" r="5"/><circle cx="440" cy="416" r="5"/><circle cx="440" cy="457" r="5"/><circle cx="440" cy="485" r="5"/>
+</g>
+<!-- HC-SR04 component left -->
+<rect x="55" y="195" width="245" height="185" rx="16" fill="#142c45" stroke="#60a5fa" stroke-width="3"/>
+<text x="177" y="225" text-anchor="middle" class="label component">HC-SR04</text>
+<circle cx="122" cy="270" r="28" fill="#0b1726" stroke="#a5f3fc" stroke-width="4"/><circle cx="230" cy="270" r="28" fill="#0b1726" stroke="#a5f3fc" stroke-width="4"/>
+<circle cx="122" cy="270" r="18" fill="#1e3a5f" stroke="#60a5fa" stroke-width="2"/><circle cx="230" cy="270" r="18" fill="#1e3a5f" stroke="#60a5fa" stroke-width="2"/>
+<text x="82" y="330" class="muted tiny">VCC</text><text x="135" y="330" class="muted tiny">TRIG</text><text x="185" y="330" class="muted tiny">ECHO</text><text x="244" y="330" class="muted tiny">GND</text>
+<!-- sensor lines -->
+<path d="M135 338 L330 338 L330 330 L440 330" fill="none" stroke="#facc15" stroke-width="4"/>
+<path d="M185 346 L345 346 L345 373 L440 373" fill="none" stroke="#fb923c" stroke-width="4"/>
+<path d="M82 348 L310 348 L310 457 L440 457" fill="none" stroke="#ef4444" stroke-width="4"/>
+<path d="M244 356 L325 356 L325 485 L440 485" fill="none" stroke="#cbd5e1" stroke-width="4"/>
+<text x="55" y="408" class="label tiny" fill="#facc15">TRIG → D7</text><text x="55" y="430" class="label tiny" fill="#fb923c">ECHO → D8</text><text x="55" y="452" class="label tiny" fill="#fca5a5">VCC → 5V</text><text x="55" y="474" class="label tiny">GND → GND</text>
+<!-- servo component right -->
+<rect x="820" y="205" width="230" height="165" rx="16" fill="#2a203b" stroke="#c084fc" stroke-width="3"/>
+<text x="935" y="235" text-anchor="middle" class="label component">SG90 SERVO</text>
+<rect x="872" y="255" width="126" height="70" rx="10" fill="#4c1d95" stroke="#c4b5fd" stroke-width="3"/>
+<circle cx="935" cy="290" r="22" fill="#ddd6fe" stroke="#7c3aed" stroke-width="4"/>
+<path d="M935 290 L1000 264" stroke="#f8fafc" stroke-width="8" stroke-linecap="round"/>
+<text x="842" y="347" class="muted tiny">Orange: Signal</text><text x="842" y="366" class="muted tiny">Red: 5V • Brown: GND</text>
+<!-- servo signal and power lines -->
+<path d="M820 347 L770 347 L770 416 L440 416" fill="none" stroke="#fb923c" stroke-width="4"/>
+<path d="M820 357 L790 357 L790 457 L440 457" fill="none" stroke="#ef4444" stroke-width="4" stroke-dasharray="10 7"/>
+<path d="M820 367 L805 367 L805 485 L440 485" fill="none" stroke="#cbd5e1" stroke-width="4" stroke-dasharray="10 7"/>
+<text x="820" y="408" class="label tiny">Signal → D9</text>
+<!-- USB computer -->
+<rect x="420" y="555" width="270" height="72" rx="12" fill="#101c2e" stroke="#64748b" stroke-width="2"/>
+<rect x="442" y="569" width="68" height="42" rx="4" fill="#1d4ed8" stroke="#93c5fd" stroke-width="2"/><path d="M449 578 H503 M449 588 H503 M449 598 H490" stroke="#bfdbfe" stroke-width="2"/>
+<text x="535" y="584" class="label component">Computer</text><text x="535" y="607" class="muted tiny">Arduino IDE + Serial Monitor</text>
+<path d="M625 238 L625 530 L555 530 L555 555" fill="none" stroke="#93c5fd" stroke-width="4" stroke-dasharray="8 7"/>
+<text x="722" y="548" class="muted tiny">USB</text>
+<text x="42" y="627" class="muted tiny">Power note: Use a suitable regulated 5V servo supply if needed; connect its GND to Arduino GND.</text>
+</svg>
